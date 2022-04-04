@@ -1,0 +1,159 @@
+/*MON COMMENTAIRE CSS
+            Les sélecteurs:ID ne s'applique qu'a un seul element par type de balise alors que la class s'applique a tous les elements.
+            Pour lid on utilise le diese  p#caregorie, pour la class on utiliselise le point p.s'appliquecategorie applique la classe  a l'element designé
+            .categorie s'applique a tous les elements qui ont la classe categotie 
+            p.categorie ,h1,h2{ applique aussi a h1 et h2     */
+                * {
+                    overflow:auto;
+                }
+                body {
+                    background-color: #8BA1BB;
+                    font-family: Arial;
+                }
+                p#categorie{
+                    background-color:black ;
+                    color:red;
+                }
+                p.categorie {
+                    background-color:black ;
+                    color:white;
+                    display:inline-block;
+                    padding:8px 18px;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    font-weight: bold;
+                    font-size: 16px;
+    
+                    
+                    /*
+                    block :le paragraphe utilise toute la ligne
+                    inline :n'occupe que la place necessaire les autres elementss'affiche a la suite width margin top bottom heigh n'ont pas d'effets
+                    inline-block; on peut controler plus de chose */  
+                    margin-left: 30px;; 
+                    margin-top: 40px;;          
+                }
+    
+                div.contenu{
+                    background-color: white;
+                    /*haut droite bas gauche
+                    Si deux param: horizontal vertical
+                    un parametre applique partout
+                    */                
+                    margin:0px 10% 80px 10%;
+                    padding:30px;
+                    min-width: 350px;
+                    box-shadow: 0px 0px 1px 1px rgba(0,0,0.1);
+
+                }
+                h1{                
+                    text-align: center;
+                    margin-bottom: 10px;
+                }                
+                p.description{
+                    text-align: center;
+                    max-width: 400px;                            
+                    display:inline-block;
+                    font-size: 14px;
+                }
+                div.description{
+                    text-align: center;            
+                }
+                .centre{
+                    /*pour tout element qui a la classe centre*/
+                    text-align:center ;
+                    width:100%;
+                }
+                div.categorie{
+                    margin-bottom: -18px;
+                    margin-top: 50px;
+                }
+                div.separateur{
+                    width:100px;
+                    height:1px;
+                    background-color: black;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                div.info{
+                    position:relative;
+                }
+                table.info{
+                    position: absolute;
+                    bottom:0 ;
+                    width:100%;
+                    color:white;
+                    background-color:#6C829DC0 ;
+                    height:80px
+                }
+                table.info td{
+                    text-align: center;
+                    /* table.info td -->propriétes pour les td a l'intereur de la class info
+                    /* table.info , td --> equivalent ce style va s'appliquer la class td.info
+                    */
+                    font-size: 14px;
+                    vertical-align: top;
+                }
+                table.info th{   
+                    font-size: 16px;
+                    vertical-align: bottom;
+                    padding-bottom: 8px;
+                }
+                img.info{
+                    display: block;
+                    max-height: 400px;
+                    object-fit: cover;
+                    min-height: 200px;
+                    background-color: lightgrey;
+                }
+                div.colonne{
+                    width:45%;
+                    margin-top: 20px;
+                }
+                .colonne h2{
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    border-bottom:5px solid #6c829d;
+                    padding-bottom: 5px;
+                }
+                div.colonne1{                                     
+                    display: inline-block;
+                    margin-right: 10%;
+                }
+                div.colonne2{
+                    float: right;                 
+                }
+                div.ingredients p{
+                    text-align: center;
+                    font-size: 14px;
+                    border:1px solid lightgray;
+                    padding:8px 0px;
+                    margin-top: 4px;
+                    margin-bottom: 0px;
+                }
+                table.preparation p.numero{
+                    background-color:#6c829d ;
+                    color:white;
+                    width:25px;
+                    height: 25px;
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: bold;
+                    padding-top: 4px;
+                    box-sizing: border-box;
+                    border-radius: 50%;
+                    margin:0px
+                } 
+                table.preparation td{
+                     vertical-align: top;
+                }
+                table.preparation td.preparation_etape{
+                    font-size: 14px;
+                    padding-left: 10px;
+                    padding-bottom: 10px;
+                }
+                table.preparation tr{
+                    height: 40px;
+               } 
+             
+                
